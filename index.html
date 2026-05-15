@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastiaan Vermeulen | Cyber Security Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap');
+        body { font-family: 'Fira Code', monospace; background: #0f172a; color: #cbd5e1; transition: background-color 0.25s ease, color 0.25s ease; }
+        body.light { background: #f8fafc; color: #0f172a; }
+        .glitch-hover:hover { text-shadow: 2px 0 #00ff00, -2px 0 #ff00ff; }
+        body.light .text-slate-300 { color: #334155 !important; }
+        body.light .text-white { color: #0f172a !important; }
+        body.light .text-slate-400 { color: #475569 !important; }
+        body.light .text-slate-500 { color: #64748b !important; }
+        body.light .text-slate-600 { color: #475569 !important; }
+        body.light .bg-slate-950 { background-color: #f8fafc !important; }
+        body.light .bg-slate-950\/90 { background-color: rgba(248,250,252,0.9) !important; }
+        body.light .bg-slate-900 { background-color: #e2e8f0 !important; }
+        body.light .bg-slate-900\/50 { background-color: rgba(226,232,240,0.85) !important; }
+        body.light .bg-slate-800 { background-color: #cbd5e1 !important; }
+        body.light .border-slate-800 { border-color: #cbd5e1 !important; }
+        body.light .border-slate-900 { border-color: #cbd5e1 !important; }
+        body.light .border-slate-700 { border-color: #94a3b8 !important; }
+        body.light .border-emerald-500\/20 { border-color: rgba(16,185,129,0.2) !important; }
+        body.light .bg-emerald-500\/5 { background-color: rgba(16,185,129,0.05) !important; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-300 leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800 p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center gap-4">
+            <span class="text-emerald-500 font-bold tracking-tighter">SV_root@howest:~$</span>
+            <div class="flex items-center gap-4">
+                <div class="space-x-6 text-sm uppercase tracking-widest hidden md:flex">
+                    <a href="#about" class="hover:text-emerald-400 transition">About</a>
+                    <a href="#projects" class="hover:text-emerald-400 transition">Projects</a>
+                    <a href="#blog" class="hover:text-emerald-400 transition">Blog</a>
+                </div>
+                <button id="themeToggle" class="rounded-full border border-slate-700 px-3 py-1 text-xs uppercase tracking-widest hover:border-emerald-500 transition" aria-label="Toggle light and dark mode">Light Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-24 px-4 max-w-6xl mx-auto border-l border-emerald-500/30 ml-4 md:ml-auto">
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 glitch-hover">
+            Sebastiaan Vermeulen
+        </h1>
+        <p class="text-xl text-emerald-400 mb-6">Applied Computer Science | Cyber Security Specialist @ HOWEST</p>
+        <p class="max-w-2xl text-slate-400">
+            Focused on penetration testing, defensive architecture, and securing the digital landscape. 
+            Currently exploring the intersection of offensive security and resilient software design.
+        </p>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-12 flex items-center">
+            <span class="text-emerald-500 mr-2">01.</span> Featured Projects
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Project Card -->
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg hover:border-emerald-500/50 transition">
+                <h3 class="text-emerald-400 font-bold mb-2">Network Pentest Project</h3>
+                <p class="text-sm text-slate-400 mb-4">Comprehensive vulnerability assessment and exploitation of a corporate network environment.</p>
+                <div class="flex gap-2 text-xs font-mono text-slate-500"><span>#Nmap</span> <span>#Metasploit</span> <span>#Kali</span></div>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg hover:border-emerald-500/50 transition">
+                <h3 class="text-emerald-400 font-bold mb-2">Honeypot Deployment</h3>
+                <p class="text-sm text-slate-400 mb-4">Setting up and monitoring decoy systems to analyze real-time attacker behavior and threat intelligence.</p>
+                <div class="flex gap-2 text-xs font-mono text-slate-500"><span>#DefensiveSec</span> <span>#Logging</span></div>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg hover:border-emerald-500/50 transition">
+                <h3 class="text-emerald-400 font-bold mb-2">Security Audits: Pharmacy & Care Center</h3>
+                <p class="text-sm text-slate-400 mb-4">Real-world compliance and infrastructure security review for sensitive healthcare environments.</p>
+                <div class="flex gap-2 text-xs font-mono text-slate-500"><span>#Audit</span> <span>#HIPAA-ish</span> <span>#GRC</span></div>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg hover:border-emerald-500/50 transition">
+                <h3 class="text-emerald-400 font-bold mb-2">Splendor (Web Version)</h3>
+                <p class="text-sm text-slate-400 mb-4">A full digital recreation of the board game Splendor, focusing on clean UI and game logic.</p>
+                <div class="flex gap-2 text-xs font-mono text-slate-500"><span>#JavaScript</span> <span>#GameDev</span></div>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg hover:border-emerald-500/50 transition">
+                <h3 class="text-emerald-400 font-bold mb-2">LightningFast SAAS</h3>
+                <p class="text-sm text-slate-400 mb-4">Theoretical concept for a high-performance Software as a Service platform architecture.</p>
+                <div class="flex gap-2 text-xs font-mono text-slate-500"><span>#CloudArch</span> <span>#Theoretical</span></div>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg hover:border-emerald-500/50 transition">
+                <h3 class="text-emerald-400 font-bold mb-2">International Game Jam</h3>
+                <p class="text-sm text-slate-400 mb-4">Developed a functional prototype within a strict 48-hour window collaborating with global peers.</p>
+                <div class="flex gap-2 text-xs font-mono text-slate-500"><span>#Teamwork</span> <span>#RapidPrototyping</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 px-4 max-w-6xl mx-auto bg-slate-900/50 border-y border-slate-800">
+        <h2 class="text-2xl font-bold text-white mb-12 flex items-center">
+            <span class="text-emerald-500 mr-2">02.</span> Blog / Activity Log
+        </h2>
+        <div class="space-y-8">
+            <article class="border-l-2 border-slate-700 pl-6 hover:border-emerald-500 transition">
+                <span class="text-xs text-slate-500 uppercase tracking-widest">May 26, 2026 • Blog</span>
+                <h3 class="text-xl font-semibold text-white">Proxmox VE — Open-Source Virtualisation for the Real World</h3>
+                <p class="text-slate-400 mt-2">A look at how Proxmox VE enables real-world virtual infrastructure with open-source flexibility.</p>
+            </article>
+
+            <article class="border-l-2 border-slate-700 pl-6 hover:border-emerald-500 transition">
+                <span class="text-xs text-slate-500 uppercase tracking-widest">April 28, 2026 • Blog</span>
+                <h3 class="text-xl font-semibold text-white">The 5 levels of Infrastructure as Code</h3>
+                <p class="text-slate-400 mt-2">Exploring the progression from simple scripting to fully automated infrastructure pipelines.</p>
+            </article>
+
+            <article class="border-l-2 border-slate-700 pl-6 hover:border-emerald-500 transition">
+                <span class="text-xs text-slate-500 uppercase tracking-widest">March 10, 2026 • Vibe Coding Hackathon</span>
+                <h3 class="text-xl font-semibold text-white">Vibe Coding Hackathon</h3>
+                <p class="text-slate-400 mt-2">Highlights from the Vibe Coding Hackathon and the security-focused challenges tackled in one day.</p>
+            </article>
+
+            <article class="border-l-2 border-slate-700 pl-6 hover:border-emerald-500 transition">
+                <span class="text-xs text-slate-500 uppercase tracking-widest">February 24, 2026 • Blog</span>
+                <h3 class="text-xl font-semibold text-white">Insights into Cyber Defense: A Day in the Life of Blue &amp; Purple Team Engineers</h3>
+                <p class="text-slate-400 mt-2">An inside view of how blue and purple teams collaborate to defend and improve enterprise security.</p>
+            </article>
+
+            <article class="border-l-2 border-slate-700 pl-6 hover:border-emerald-500 transition">
+                <span class="text-xs text-slate-500 uppercase tracking-widest">February 17, 2026 • Blog</span>
+                <h3 class="text-xl font-semibold text-white">Van Plato tot Vibe Coding</h3>
+                <p class="text-slate-400 mt-2">From philosophy to practical code: how modern security practices evolved from concept to hackathon.</p>
+            </article>
+
+            <article class="border-l-2 border-slate-700 pl-6 hover:border-emerald-500 transition">
+                <span class="text-xs text-slate-500 uppercase tracking-widest">Coming Soon</span>
+                <h3 class="text-xl font-semibold text-white">Podcast Episode Coming Soon</h3>
+                <p class="text-slate-400 mt-2">A new episode is pending recording — stay tuned for the next cybersecurity podcast installment.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-8 flex items-center">
+            <span class="text-emerald-500 mr-2">03.</span> About Me
+        </h2>
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="flex-1 text-slate-400 space-y-4">
+                <p>
+                    I am an Applied Computer Science student at **HOWEST**, specializing in the high-stakes world of **Cyber Security**. 
+                    My journey is driven by a curiosity for how systems break—and more importantly, how to build them so they don't.
+                </p>
+                <p>
+                    From conducting security audits for pharmacies to developing games in international jams, 
+                    I enjoy projects that require both technical precision and creative problem-solving.
+                </p>
+            </div>
+            <div class="flex-1">
+                <div class="p-6 border border-emerald-500/20 bg-emerald-500/5 rounded">
+                    <h4 class="text-white font-bold mb-4">Technical Toolkit</h4>
+                    <ul class="grid grid-cols-2 gap-2 text-sm font-mono">
+                        <li>▹ Penetration Testing</li>
+                        <li>▹ Network Security</li>
+                        <li>▹ Web Development</li>
+                        <li>▹ Risk Assessment</li>
+                        <li>▹ Python / Bash</li>
+                        <li>▹ Linux Hardening</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center text-slate-600 text-xs border-t border-slate-900">
+        <p>© 2026 Sebastiaan Vermeulen. Built with code & caffeine.</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const initialTheme = localStorage.getItem('theme') || 'dark';
+        document.body.classList.toggle('light', initialTheme === 'light');
+        themeToggle.textContent = initialTheme === 'light' ? 'Dark Mode' : 'Light Mode';
+
+        themeToggle.addEventListener('click', () => {
+            const isLight = document.body.classList.toggle('light');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+            themeToggle.textContent = isLight ? 'Dark Mode' : 'Light Mode';
+        });
+    </script>
+
+</body>
+</html>
